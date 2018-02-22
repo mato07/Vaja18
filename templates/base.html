@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %} {% endblock title %}</title>
+</head>
+<body>
+    <a href="/">Domov</a>
+    <a href="/contact">Kontakt</a>
+    <a href="/about">About</a>
+    <a href="/nekaj">Nekaj</a>
+
+    <!-- Vsebina begin -->
+
+    {% block vsebina %}
+        Generična vsebina <!-- to bi se pokazalo ce ne bi nic dali v block -->
+    {% endblock vsebina %}
+
+    <!-- Vsebina end -->
+</body>
+</html>
